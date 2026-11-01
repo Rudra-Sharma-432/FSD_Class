@@ -1,7 +1,9 @@
+"use strict";
+
 // data types
 // total 8 data types
 
-dataTypes = {
+const dataTypes = {
   // 8 primitive dataTypes
   "primitive": [Number, String, Boolean, BigInt, Symbol, undefined, null],
 
@@ -16,9 +18,9 @@ let firstName = "Rudra";
 let lastName = "Sharma";
 
 // this is example of concatenation 
-console.log(firstName + lastName);
-console.log(firstName + " " + lastName);
-console.log(firstName, lastName);
+console.log(firstName + lastName); // RudraSharma
+console.log(firstName + " " + lastName); // Rudra Sharma
+console.log(firstName, lastName); // Rudra Sharma
 
 console.log("====================");
 
@@ -26,22 +28,26 @@ let price = 28;
 let tax = 5;
 let msg = ' Total ';
 
-console.log(price + msg + tax);
+console.log(price + msg + tax); // `28 Total 5`
 
 // this will concatenate (because first was string)
-console.log(msg + price + tax);
+console.log(msg + price + tax); // ` Total 285`
 
 // this will add because first was 'int' then concatenate because the 2nd was 'string'
 // int + int => add and give int
-// int + str => cconcatenate
-console.log(price + tax + msg);
+// int + str => concatenate
+console.log(price + tax + msg); // `34 Total `
+
+
+console.log(price + tax + msg + tax + price); // `34 Total 528`
+
 
 console.log("=================");
 
 let name = "rudra";
-console.log(`name : ${name}`);
+console.log(`name : ${name}`); // `name : rudra`
 let Name = 'rudra';
-console.log(`Name : ${Name}`);
+console.log(`Name : ${Name}`); // `Name : rudra`
 
 console.log(`firstName : ${firstName}`);
 
